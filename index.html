@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title></title>
+		<link rel="index" title="" href="" />
+
+    <script src="vendor/underscore/underscore-min.js"></script>
+    <script src="vendor/backbone-events-standalone/backbone-events-standalone.min.js"></script>
+
+    <script src="messenger.js"></script>
+    <script src="testapp.js"></script>
+
+
+	</head>
+
+	<body class="" lang="en-US">
+
+    <script>
+
+      var M = new Messenger();
+      var testApp1 = new TestApp('body', M);
+
+    </script>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr onmouseover="M.highlightParticipant('P01127')">
+          <td>P01127</td>
+          <td>PDGFB</td>
+          <td>Platelet-derived growth factor subunit B</td>
+        </tr>
+        <tr onmouseover="M.trigger('highlight:participant', 'P16234')">
+          <td>P16234</td>
+          <td>PDGFRA</td>
+          <td>Platelet-derived growth factor receptor alpha</td>
+        </tr>
+        <tr onmouseover="M.highlightParticipant('P09619')">
+          <td>P09619</td>
+          <td>PDGFRB</td>
+          <td>Platelet-derived growth factor receptor beta</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+	</body>
+
+</html>
