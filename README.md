@@ -4,7 +4,7 @@ A Backbone Events object that can be passed to different displayers for triggeri
 
 ### Demo
 
-* Run `bower install` for convenience (installs backbone-events-standalones and underscore)
+* Run `bower install` for convenience (installs backbone-events-standalone and underscore)
 * Open index.html in your browser
 * Hover over the table while viewing the console
 
